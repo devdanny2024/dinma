@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+.navbar {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  position: fixed; /* Fix the navbar to the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: black; /* Default background color */
+  color: white; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  z-index: 1000; /* Make sure navbar is on top */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from navbar */
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth transition for text */
+}
+
+.navLinks a:hover {
+  color: #f0f0f0; /* Hover color */
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.869); /* Change background to white when scrolled */
+  color: black; /* Change text color to black when scrolled */
+}
+
+.active .navLinks a {
+  color: black; /* Update link color for scrolled state */
+}
+
+.active .navLinks a:hover {
+  color: #333; /* Hover color for scrolled state */
+}
+
+.hamburger {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100; /* Ensure it's above the navbar */
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); /* Rotate the first bar to form an X */
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px); /* Rotate the last bar to form an X */
+}
+.connect{
+    width: 120px;
+    height: 40px;
+    background-color: #3aff75;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-family: "DM Mono", monospace;
+}
+@media (max-width: 768px) {
+  .navLinks {
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    right: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: none; /* Hide by default */
+  }
+
+  .showMenu {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon on small screens */
+  }
+
+  .navLinks li {
+    margin: 10px 0;
+  }
+
+  .active .hamburger .bar {
+    background-color: black; /* Hamburger color change on scroll */
+  }
+}
