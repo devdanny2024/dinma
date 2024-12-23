@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from './Navbar';
-
+import HeroHeader from './HeroHeader';
+import Feautured from "./Feautured";
+import Recommend from "./Recommend";
+import Toptraders from "./Toptraders";
 const Junn = () => {
 
   return (
@@ -13,6 +16,10 @@ const Junn = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />
+        <HeroHeader/>
+        <Feautured/>
+        <Recommend/>
+        <Toptraders/>
     </>
   );
 };

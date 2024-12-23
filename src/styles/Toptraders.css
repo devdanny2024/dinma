@@ -1,0 +1,139 @@
+.toptraders-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding: 20px 16px;
+    background-color: white;
+    gap: 24px; /* Spacing between elements */
+    max-width: 1440px; /* Limit content width */
+    margin: 0 auto; /* Center the container itself */
+}
+.toptraders-contain h1 {
+    align-self: flex-start; /* Align the title to the left */
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-size: 2.5rem; /* Default font size */
+    font-weight: 500;
+    line-height: 1.4;
+    margin-left: 16px; /* Add slight margin from the left */
+}
+.toptraders-content {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between; /* Push children to opposite sides */
+    align-items: center; /* Center align items vertically */
+    width: 100%; /* Ensure full-width layout */
+    padding: 20px 40px; /* Adjust padding as needed */
+}
+
+.toptraders-title {
+    display: flex;
+    flex-direction: column; /* Align items horizontally */
+    gap: 16px; /* Add spacing between icon and text */
+    padding-top: 100px;
+}
+
+.toptraders-text {
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+    align-items: flex-start; /* Align text to the left */
+    gap: 4px;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px); /* Glass effect */
+    width: 490px;
+}
+.toptraders-text h4{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 38.4px */
+}
+.toptraders-text p{   
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 30.4px */
+}
+.toptraders-foot {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-end; /* Align to the right */
+    text-align: right; /* Align text to the right */
+    gap: 8px;
+}
+
+.toptraders-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    backdrop-filter: blur(30px); /* Glassmorphism effect */
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+.toptraders-banner {
+    width: 100%;
+    max-width: 1900px; /* Limit maximum width of the banner */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 1392 / 445;
+    border-radius: 16px;
+    background: url('../images/Rectangle 104.png') lightgray 50% / cover no-repeat;
+    position: relative;
+}
+/* Media Queries */
+/* For 1920px screens */
+@media (min-width: 1920px) {
+    .toptraders-content {
+        padding: 30px 60px;
+    }
+    .toptraders-contain h1 {
+        font-size: 36px;
+        margin-left: 32px;
+    }
+}
+
+/* For 1440px screens */
+@media (max-width: 1440px) {
+    .toptraders-content {
+        padding: 25px 50px;
+    }
+    .toptraders-contain h1 {
+        font-size: 24px;
+        margin-left: 32px;
+    }
+}
+
+/* For 1280px screens */
+@media (max-width: 1280px) {
+    .toptraders-content {
+        padding: 20px 40px;
+    }
+    .toptraders-contain h1 {
+        font-size: 16px;
+        margin-left: 32px;
+    }
+}
+
+/* For smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .toptraders-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Align all content to the left */
+        gap: 16px;
+    }
+    .toptraders-foot {
+        align-items: flex-start; /* Align to the left for small screens */
+        text-align: left;
+    }
+}

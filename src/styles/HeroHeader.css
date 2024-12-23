@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.title-box h1{
+    color: #FFF;
+    /* H1/bold */
+    font-family: Poppins;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 600px;
+}
+.title-box{
+    margin-top: 218px;
+}
+.hero-header {
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(255, 255, 255)), url('../images/image 4.png') lightgray 50% / cover no-repeat;
+    height: 950px;
+}
+
+.hero-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent overlay */
+    backdrop-filter: blur(50px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(50px); /* For Safari support */
+    z-index: 1; /* Place above the background */
+}
+.hero-header .content {
+    position: relative;
+    z-index: 2; /* Place above the blur overlay */
+    color: #000; /* Adjust text color for contrast */
+}
+.title-box h2{
+    color: #FFF;
+    /* H4/regular */
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 33.6px */
+}
+.btn{
+    display: flex;
+    width: 152px;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--primary-500, #3aff75);
+    color: #000000;
+    cursor: pointer;
+    /* base/regular */
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 22.8px */
+/* button shdw */
+    box-shadow: 0px 106px 30px 0px rgba(51, 187, 197, 0.00), 0px 68px 27px 0px rgba(51, 187, 197, 0.01), 0px 38px 23px 0px rgba(51, 187, 197, 0.05), 0px 17px 17px 0px rgba(51, 187, 197, 0.09), 0px 4px 9px 0px rgba(51, 187, 197, 0.10);
+}
+.btn-1{
+    display: flex;
+    width: 152px;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border-radius: 12px;
+    border: 2px solid var(--primary-500, #3aff75);
+    color: #fff;
+    cursor: pointer;
+
+    /* base/regular */
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 22.8px */
+/* button shdw */
+    box-shadow: 0px 106px 30px 0px rgba(51, 187, 197, 0.00), 0px 68px 27px 0px rgba(51, 187, 197, 0.01), 0px 38px 23px 0px rgba(51, 187, 197, 0.05), 0px 17px 17px 0px rgba(51, 187, 197, 0.09), 0px 4px 9px 0px rgba(51, 187, 197, 0.10);
+}
+.button-case{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.nft-box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    width: 330px;
+    height: 345px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: url('../images/image 4.png') lightgray 50% / cover no-repeat;
+    position: relative;
+}
+
+.badge {
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.10);
+    width: 190px;
+    height: 48px;
+    flex-shrink: 0;
+    /* glass effect */
+    backdrop-filter: blur(30px);
+    position: absolute;
+    bottom: 16px; /* Adjust as needed */
+    left: 40%;
+    transform: translateX(-50%);
+}
+.badge p{
+    color: #FFF;
+
+    /* small/medium */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+@media (max-width: 1440px) {
+    .nft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+        width: 330px;
+        height: 345px;
+        flex-shrink: 0;
+        border-radius: 24px;
+        background: url('../images/image 4.png') lightgray 50% / cover no-repeat;
+        position: relative;
+    }
+
+    .title-box h1{
+        margin-right: 510px;
+        font-size: 46px;
+    }
+    .title-box{
+        margin-top: 240px;
+    }
+    .hero-header{
+        display: flex;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
